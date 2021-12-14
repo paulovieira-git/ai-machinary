@@ -1,2 +1,2 @@
-# AI-Machinary
-This is a repository to artificial intelligence (AI) machinary. The focus of the work it is machinary to AI symbolic. This machinary are models. We start this work with computation models, we emphatize in this part the nonm deterministic models. 
+# AI-Machinery
+This is a repository to artificial intelligence (AI) machinery. The focus of the work it is machinery to AI symbolic. This machinery are models. We start this work with computation models, we emphatize in this part the non deterministic models. 
