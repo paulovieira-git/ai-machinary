@@ -1,4 +1,4 @@
-final_states=[3]                                    # < ---------
+final_states=[1,3]                                    # < ---------
 print("introduza um valor (-1 para terminar): ")
 word = input()
 state=1 # estado inicial
@@ -17,16 +17,19 @@ while(word!="-1"):
                     state=4
             case 2:
                 if (word[counter] == "a"):
-                    state = 3
-                if (word[counter] != "a"):
+                    state = 4
+                if (word[counter] == "b"):
+                    state=3
+                if (word[counter] != "a" and word[counter] != "b"): # quando nao occorem os anteriores
                     state=4
             case 3:
+                if (word[counter] == "a"):
+                    state = 4
                 if (word[counter] == "b"):
                     state = 3
-                if (word[counter] != "b"):
-                    state = 4
             case 4:
-                    state=4                      
+                    state=4
+                    break
     if(counter==len(word)-1 and state in final_states):
         print("palavra aceite,",word)
     else:
